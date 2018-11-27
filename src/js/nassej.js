@@ -43,7 +43,8 @@ $(document).ready(function(){
     ]
     $(".header--slider").owlCarousel({
         items:1,
-        rtl:true
+        rtl:true,
+        lazyLoad:true
     });
     function runServicesCarusel(){
         $(".service-items").owlCarousel({
@@ -53,6 +54,7 @@ $(document).ready(function(){
             margin:20,
             dots:false,
             nav:true,
+            lazyLoad:true,
             responsive : {
                 // breakpoint from 0 up
                 0 : {
