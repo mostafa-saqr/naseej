@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('subset-GESSTwoMedium-Medium.eot');
+    src: url('subset-GESSTwoMedium-Medium.eot?#iefix') format('embedded-opentype'),
+        url('subset-GESSTwoMedium-Medium.woff2') format('woff2'),
+        url('subset-GESSTwoMedium-Medium.woff') format('woff'),
+        url('subset-GESSTwoMedium-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('subset-GESSTwoLight-Light.eot');
+    src: url('subset-GESSTwoLight-Light.eot?#iefix') format('embedded-opentype'),
+        url('subset-GESSTwoLight-Light.woff2') format('woff2'),
+        url('subset-GESSTwoLight-Light.woff') format('woff'),
+        url('subset-GESSTwoLight-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

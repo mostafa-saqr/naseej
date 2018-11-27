@@ -1,0 +1,162 @@
+*, h1{
+    font-family: 'GE SS Two';
+    font-weight: 500;
+    font-style: normal;
+
+}
+html, body{
+    direction: rtl;
+    text-align: right
+}
+/*header*/
+header{
+    background: $headerColor;
+    .top-navbar {
+        position: absolute;
+        left: 8.6%;
+        top: 10px;
+        z-index: 3;
+        ul{
+          
+            li {
+                margin-right: 19px !important;
+            }
+        }
+        a.lang {
+            color: #a0a0a0;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+    }
+    .bg-light {
+        background-color: rgba(248, 249, 250, 0) !important;
+        position:absolute;
+        z-index: 2;
+        width: 80%;
+        right: 14%;
+        top: 35px;
+        ul{
+            padding: 5px;
+            border-top: 1px solid rgba(255, 255, 255, 0.20);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+        }
+        .nav-link{
+            color: white !important;
+        }
+    }
+}
+/*buttons*/
+.main-btn {
+    background: $mainColor;
+    color: white;
+    padding: 7px 37px;
+    border-radius: 25px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 10px;
+    &:hover{
+        text-decoration: none;
+    }
+} 
+.all--servcies-btn{
+    border: 1px solid $mainColor;
+    color: $mainColor;
+    padding: 6px 15px;
+    border-radius: 20px;
+} 
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+/*mobile and tablet view*/
+@media only screen and (max-width: 1200px) {
+   header{
+    .bg-light {
+        width: 100%;
+        right: 0%;
+        padding: 0;
+    }
+    .navbar-nav {
+        background: rgba(51, 36, 36, 0.88);
+        padding: 14px 28px !important;
+        min-height: 100%; 
+    }
+   }
+   .services-index .section-title:after {
+        background: rgba(202, 165, 71, 0);
+    }
+    .services-index .tab-title {
+        font-size: 0.9rem;
+    }
+    .nav {
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        
+    }
+}
+
+@media only screen and (max-width: 780px) {
+   header{
+    .top-navbar {
+        left: 2.6%;
+    }
+    .items {
+        min-height: 95vh;
+    }
+    img.item--mainbg {
+        min-height: inherit;
+        width: auto !important;
+    }
+    .banner-Desc {
+        right: 3%;
+            h3 {
+            font-size: 1.5rem;
+            max-width: 75%;
+            p{
+                font-size: 0.9rem;
+                max-width: 66%;
+            }
+        }
+    } 
+   }
+   .services-content{
+        min-height: 300px;
+    .owl-dots {
+        bottom: -26%;
+    }
+   }
+ 
+}
+@media only screen and (max-width: 480px) {
+   
+    .banner-Desc {
+            h3 {
+            max-width:58% !important;
+            }
+            p{
+                max-width: 58% !important;
+            }
+        }
+        .item--subimg{
+            display: none !important; 
+        }
+        .services-index{
+            .nav {
+                margin-bottom: 0px;
+            }
+            .nav-tabs {
+                border-bottom: 0px solid #dee2e6;
+            }
+        }
+        .services-index {
+            h1 {
+                font-size: 1.1rem;
+            }
+        }
+        .all--servcies-btn {
+            border-radius: 20px;
+            font-size: .9rem;
+        }
+        
+}  
